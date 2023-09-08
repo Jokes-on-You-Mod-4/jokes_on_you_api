@@ -15,9 +15,17 @@ class NinjaService
       get_url("/v1/trivia?category=#{category}&limit=10")
     end
     
+
     def get_jokes(num)
       get_url("/v1/dadjokes?limit=#{num}")
     end
 
+    def get_emoji(category)
+      if category == 'incorrect'
+        get_url("/v1/emoji?name=pile of poo")
+      elsif category == 'correct'
+        get_url("/v1/emoji?name=party popper")
+      end
+    end
   end
 end

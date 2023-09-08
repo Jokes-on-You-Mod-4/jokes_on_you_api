@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :trivia, only: %i[index]
       resources :jokes, only: %i[index]
+      get '/emoji', to: 'emoji#show'
     end
   end
 end
