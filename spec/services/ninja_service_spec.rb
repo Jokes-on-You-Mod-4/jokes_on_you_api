@@ -15,6 +15,18 @@ RSpec.describe NinjaService do
       end
     end
   end
+  describe 'gets a number of jokes' do 
+    it 'gets jokes' do 
+      num = 2
+      jokes = NinjaService.get_jokes(num)
+      expect(jokes).to be_a Array
+      expect(jokes.count).to eq(2)
+
+      jokes.each do |joke|
+        expect(joke[:joke]).to be_a(String)
+      end
+    end
+  end
 
   describe 'gets emojis' do 
     it 'returns a party popper emoji' do 
