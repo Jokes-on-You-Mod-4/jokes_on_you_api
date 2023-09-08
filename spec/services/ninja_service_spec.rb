@@ -29,7 +29,7 @@ RSpec.describe NinjaService do
         check_hash_structure(e, :character, String)
         check_hash_structure(e, :image, String)
         check_hash_structure(e, :group, String)
-        check_hash_structure(e, :sub_group, String)
+        check_hash_structure(e, :subgroup, String)
       end
     end
 
@@ -45,7 +45,7 @@ RSpec.describe NinjaService do
         check_hash_structure(e, :character, String)
         check_hash_structure(e, :image, String)
         check_hash_structure(e, :group, String)
-        check_hash_structure(e, :sub_group, String)
+        check_hash_structure(e, :subgroup, String)
       end
     end
   end

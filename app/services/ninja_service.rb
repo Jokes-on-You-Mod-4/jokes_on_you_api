@@ -17,9 +17,9 @@ class NinjaService
     
     def get_emoji(category)
       if category == 'incorrect'
-        get_url("/v1/emoji?code=U+1F4A9")
+        get_url("/v1/emoji?name=pile of poo")
       elsif category == 'correct'
-        get_url("/v1/emoji?code=U+1F389")
+        get_url("/v1/emoji?name=party popper")
       end
     end
   end
