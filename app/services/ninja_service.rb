@@ -14,5 +14,10 @@ class NinjaService
     def get_trivia(category)
       get_url("/v1/trivia?category=#{category}&limit=10")
     end
+    
+    def get_jokes(num)
+      get_url("/v1/dadjokes?limit=#{num}")
+    end
+
   end
 end
