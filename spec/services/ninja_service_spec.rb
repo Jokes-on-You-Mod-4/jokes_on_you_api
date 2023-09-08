@@ -15,4 +15,21 @@ RSpec.describe NinjaService do
       end
     end
   end
+
+  describe 'gets emojis' do 
+    it 'returns a positive emoji' do 
+      category = 'correct'
+      emoji = NinjaService.get_emoji(category)
+      
+      expect(emoji).to be_an Array
+
+      emoji.each do |e|
+        check_hash_structure(e, :code, String)
+        check_hash_structure(e, :character, String)
+        check_hash_structure(e, :image, String)
+        check_hash_structure(e, :group, String)
+        check_hash_structure(e, :sub_group, String)
+      end
+    end
+  end
 end
