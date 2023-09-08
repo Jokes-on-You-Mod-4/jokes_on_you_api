@@ -4,6 +4,6 @@ class Joke
 
   def initialize(data)
     @id = nil
-    @trivia_category = data[:joke]
+    @joke = data[:joke]
   end
 end
