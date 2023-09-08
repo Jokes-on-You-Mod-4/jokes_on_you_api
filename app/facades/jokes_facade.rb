@@ -1,4 +1,4 @@
-class TriviaFacade
+class JokesFacade
   
   def jokes_index(num)
     jokes_data =  NinjaService.get_jokes(num)
