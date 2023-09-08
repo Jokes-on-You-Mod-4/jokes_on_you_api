@@ -23,6 +23,7 @@ RSpec.describe Emoji do
       expect(@emoji.character).to eq("💩")
       expect(@emoji.image).to eq('https://api-ninjas-data.s3.us-west-2.amazonaws.com/emojis/U%2B1F4A9.png')
       expect(@emoji.name).to eq('pile of poo')
+      expect(@emoji.id).to eq(nil.to_json)
     end
   end
 end
